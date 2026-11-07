@@ -1,0 +1,10 @@
+{
+  "latestErrorEvent": {
+    "code": "TYPE-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"C:\\\\nvm4w\\\\nodejs\\\\node.exe D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\node_modules\\\\typescript\\\\bin\\\\tsc --project D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\apps\\\\threat-catalog\\\\node_modules\\\\.federation\\\\tsconfig.caf5c5879d23603631d6ab65a83fcc59.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "args": {
+      "cmd": "C:\\nvm4w\\nodejs\\node.exe D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\node_modules\\typescript\\bin\\tsc --project D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\apps\\threat-catalog\\node_modules\\.federation\\tsconfig.caf5c5879d23603631d6ab65a83fcc59.json"
+    },
+    "timestamp": 1794028882051
+  }
+}

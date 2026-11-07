@@ -24,7 +24,7 @@ export default defineConfig({
 		}),
 	],
 
-	base: "http://localhost:3200/",
+	base: "/",
 	server: {
 		port: 3200,
 		strictPort: true,

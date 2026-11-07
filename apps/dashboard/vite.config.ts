@@ -24,7 +24,7 @@ export default defineConfig({
 		}),
 	],
 
-	base: "http://localhost:3000/",
+	base: "/",
 	server: {
 		port: 3000,
 		strictPort: true,

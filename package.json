@@ -14,7 +14,13 @@
 		"dev:mfe2": "npm run build --prefix apps/threat-feeds && npm run preview --prefix apps/threat-feeds",
 		"dev:mfe3": "npm run build --prefix apps/threat-catalog && npm run preview --prefix apps/threat-catalog",
 		"dev:mfe4": "npm run build --prefix apps/vulnerability-tracker && npm run preview --prefix apps/vulnerability-tracker",
-		"start:all": "concurrently -k -n HOST,MFE1,MFE2,MFE3,MFE4 \"npm run dev:host\" \"npm run dev:mfe1\" \"npm run dev:mfe2\" \"npm run dev:mfe3\" \"npm run dev:mfe4\""
+		"start:all": "concurrently -k -n HOST,MFE1,MFE2,MFE3,MFE4 \"npm run dev:host\" \"npm run dev:mfe1\" \"npm run dev:mfe2\" \"npm run dev:mfe3\" \"npm run dev:mfe4\"",
+		"build:host": "npm run build --prefix apps/host",
+		"build:mfe1": "npm run build --prefix apps/dashboard",
+		"build:mfe2": "npm run build --prefix apps/threat-feeds",
+		"build:mfe3": "npm run build --prefix apps/threat-catalog",
+		"build:mfe4": "npm run build --prefix apps/vulnerability-tracker",
+		"build:all": "npm run build:mfe1 && npm run build:mfe2 && npm run build:mfe3 && npm run build:mfe4 && npm run build:host"
 	},
 	"devDependencies": {
 		"concurrently": "^9.0.0"

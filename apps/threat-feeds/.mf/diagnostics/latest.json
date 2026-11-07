@@ -1,10 +1,10 @@
 {
   "latestErrorEvent": {
     "code": "TYPE-001",
-    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"C:\\\\nvm4w\\\\nodejs\\\\node.exe D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\node_modules\\\\typescript\\\\bin\\\\tsc --project D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\apps\\\\threat-feeds\\\\node_modules\\\\.federation\\\\tsconfig.45a4a08b2f7c47036d25eef05d177aed.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"C:\\\\nvm4w\\\\nodejs\\\\node.exe D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\node_modules\\\\typescript\\\\bin\\\\tsc --project D:\\\\ProIT_Bridge\\\\020_AgenticAI\\\\APP_ThreatView\\\\client\\\\apps\\\\threat-feeds\\\\node_modules\\\\.federation\\\\tsconfig.e52be41187fec3a91b00eecc7120c8f5.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
     "args": {
-      "cmd": "C:\\nvm4w\\nodejs\\node.exe D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\node_modules\\typescript\\bin\\tsc --project D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\apps\\threat-feeds\\node_modules\\.federation\\tsconfig.45a4a08b2f7c47036d25eef05d177aed.json"
+      "cmd": "C:\\nvm4w\\nodejs\\node.exe D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\node_modules\\typescript\\bin\\tsc --project D:\\ProIT_Bridge\\020_AgenticAI\\APP_ThreatView\\client\\apps\\threat-feeds\\node_modules\\.federation\\tsconfig.e52be41187fec3a91b00eecc7120c8f5.json"
     },
-    "timestamp": 1794028882200
+    "timestamp": 1794075048146
   }
 }

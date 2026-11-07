@@ -1,7 +1,13 @@
 declare module "mfeDashboard/DashboardApp" {
 	import type { ComponentType } from "react";
-	const Dashboard: ComponentType;
-	export default Dashboard;
+
+	interface DashboardAppProps {
+		onNavigate?: (module: "catalog" | "tracker" | "feeds") => void;
+	}
+
+	const DashboardApp: ComponentType<DashboardAppProps>;
+
+	export default DashboardApp;
 }
 
 declare module "mfeThreatCatalog/Catalog" {

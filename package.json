@@ -6,15 +6,16 @@
 		"apps/dashboard",
 		"apps/threat-feeds",
 		"apps/threat-catalog",
-		"apps/vulnerability-tracker"
+		"apps/vulnerability-tracker",
+		"packages/shared/profile"
 	],
 	"scripts": {
 		"dev:host": "npm run dev --prefix apps/host",
-		"dev:mfe1": "npm run build --prefix apps/dashboard && npm run preview --prefix apps/dashboard",
-		"dev:mfe2": "npm run build --prefix apps/threat-feeds && npm run preview --prefix apps/threat-feeds",
-		"dev:mfe3": "npm run build --prefix apps/threat-catalog && npm run preview --prefix apps/threat-catalog",
-		"dev:mfe4": "npm run build --prefix apps/vulnerability-tracker && npm run preview --prefix apps/vulnerability-tracker",
-		"start:all": "concurrently -k -n HOST,MFE1,MFE2,MFE3,MFE4 \"npm run dev:host\" \"npm run dev:mfe1\" \"npm run dev:mfe2\" \"npm run dev:mfe3\" \"npm run dev:mfe4\"",
+		"dev:dashboard": "npm run dev --prefix apps/dashboard",
+		"dev:catalog": "npm run dev --prefix apps/threat-catalog",
+		"dev:tracker": "npm run dev --prefix apps/vulnerability-tracker",
+		"dev:feeds": "npm run dev --prefix apps/threat-feeds",
+		"start:all": "concurrently \"npm run dev:dashboard\" \"npm run dev:catalog\" \"npm run dev:tracker\" \"npm run dev:feeds\" \"npm run dev:host\"",
 		"build:host": "npm run build --prefix apps/host",
 		"build:mfe1": "npm run build --prefix apps/dashboard",
 		"build:mfe2": "npm run build --prefix apps/threat-feeds",

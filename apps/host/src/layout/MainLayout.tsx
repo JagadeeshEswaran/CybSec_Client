@@ -1,7 +1,7 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Sidebar, { type ModuleType } from "../components/Sidebar";
-
 import Topbar from "../components/Topbar";
+import { ThemeProvider } from "../context/ThemeContext";
 
 interface MainLayoutProps {
 	activeModule: ModuleType;
@@ -15,37 +15,50 @@ const MainLayout = ({
 	children,
 }: MainLayoutProps) => {
 	const [sidebarOpen, setSidebarOpen] = useState(false);
+	const workspaceRef = useRef<HTMLElement>(null);
+
+	useEffect(() => {
+		workspaceRef.current?.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	}, [activeModule]);
 
 	return (
-		<div className="app-shell">
-			<div className={`sidebar-container ${sidebarOpen ? "sidebar-open" : ""}`}>
-				<Sidebar
-					activeModule={activeModule}
-					onNavigate={(module) => {
-						onNavigate(module);
-						setSidebarOpen(false);
-					}}
-				/>
-			</div>
-
-			{sidebarOpen && (
+		<ThemeProvider>
+			<div className="app-shell">
 				<div
-					className="sidebar-overlay"
-					onClick={() => setSidebarOpen(false)}
-				/>
-			)}
+					className={`sidebar-container ${sidebarOpen ? "sidebar-open" : ""}`}>
+					<Sidebar
+						activeModule={activeModule}
+						onNavigate={(module) => {
+							onNavigate(module);
+							setSidebarOpen(false);
+						}}
+					/>
+				</div>
 
-			<div className="main-section">
-				<Topbar onMenuClick={() => setSidebarOpen(true)} />
+				{sidebarOpen && (
+					<div
+						className="sidebar-overlay"
+						onClick={() => setSidebarOpen(false)}
+					/>
+				)}
 
-				<main className="workspace">{children}</main>
+				<div className="main-section">
+					<Topbar onMenuClick={() => setSidebarOpen(true)} />
 
-				<footer className="app-footer">
-					<span>NEXUS Platform</span>
-					<span>© 2026 All rights reserved</span>
-				</footer>
+					<main className="workspace" ref={workspaceRef}>
+						{children}
+					</main>
+
+					<footer className="app-footer">
+						<span>CybSec_View Platform</span>
+						<span>© 2026 All rights reserved</span>
+					</footer>
+				</div>
 			</div>
-		</div>
+		</ThemeProvider>
 	);
 };
 

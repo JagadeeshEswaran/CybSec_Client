@@ -13,7 +13,8 @@
 		"@module-federation/vite": "^1.23.7",
 		"lucide-react": "^1.66.0",
 		"react": "^19.3.1",
-		"react-dom": "^19.3.1"
+		"react-dom": "^19.3.1",
+		"@cybsec/shared-profile": "1.0.0"
 	},
 	"devDependencies": {
 		"@eslint/js": "^10.0.1",

@@ -5,7 +5,6 @@ import {
 	Building2,
 	Settings,
 	Layers,
-	ChevronLeft,
 } from "lucide-react";
 
 export type ModuleType =

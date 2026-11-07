@@ -12,25 +12,25 @@ export default defineConfig({
 				mfeDashboard: {
 					type: "module",
 					name: "mfeDashboard",
-					entry: `${process.env.VITE_MFE_CUSTOMERS_URL ?? "http://localhost:3000"}/remoteEntry.js`,
+					entry: `${process.env.VITE_MFE_DASHBOARD_URL ?? "http://localhost:3000"}/remoteEntry.js`,
 				},
 
 				mfeThreatCatalog: {
 					type: "module",
 					name: "mfeThreatCatalog",
-					entry: `${process.env.VITE_MFE_CUSTOMERS_URL ?? "http://localhost:3100"}/remoteEntry.js`,
+					entry: `${process.env.VITE_MFE_CATALOG_URL ?? "http://localhost:3100"}/remoteEntry.js`,
 				},
 
 				mfeThreatFeeds: {
 					type: "module",
 					name: "mfeThreatFeeds",
-					entry: `${process.env.VITE_MFE_CUSTOMERS_URL ?? "http://localhost:3200"}/remoteEntry.js`,
+					entry: `${process.env.VITE_MFE_FEEDS_URL ?? "http://localhost:3200"}/remoteEntry.js`,
 				},
 
 				mfeVulnerabilityTracker: {
 					type: "module",
 					name: "mfeVulnerabilityTracker",
-					entry: `${process.env.VITE_MFE_CUSTOMERS_URL ?? "http://localhost:3300"}/remoteEntry.js`,
+					entry: `${process.env.VITE_MFE_VULNERABILITY_URL ?? "http://localhost:3300"}/remoteEntry.js`,
 				},
 			},
 

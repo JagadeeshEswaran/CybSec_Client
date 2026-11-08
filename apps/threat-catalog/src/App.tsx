@@ -13,7 +13,6 @@ import {
 	Database,
 	CalendarDays,
 	Tag,
-	ChevronDown,
 } from "lucide-react";
 
 import "./App.css";

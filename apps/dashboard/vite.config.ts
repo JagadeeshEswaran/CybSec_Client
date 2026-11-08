@@ -20,6 +20,11 @@ export default defineConfig({
 				"react-dom": {
 					singleton: true,
 				},
+
+				"@cybsec/shared-profile": {
+					singleton: true,
+					requiredVersion: "1.0.0",
+				},
 			},
 		}),
 	],

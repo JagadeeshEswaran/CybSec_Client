@@ -48,6 +48,7 @@ export interface UserProfile {
 	schemaVersion: number;
 
 	roles: ProfessionalRole[];
+	customRoles: string[];
 
 	/**
 	 * Free-form technology names.
@@ -56,10 +57,13 @@ export interface UserProfile {
 	technologies: string[];
 
 	environments: DeploymentEnvironment[];
+	customEnvironments: string[];
 
 	interests: SecurityInterest[];
+	customInterests: string[];
 
 	priorities: SecurityPriority[];
+	customPriorities: string[];
 
 	createdAt: string;
 	updatedAt: string;

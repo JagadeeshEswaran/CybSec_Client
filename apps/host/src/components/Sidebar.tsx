@@ -12,6 +12,7 @@ export type ModuleType =
 	| "catalog"
 	| "tracker"
 	| "feeds"
+	| "workspace"
 	| "about";
 
 interface SidebarProps {
@@ -40,6 +41,11 @@ const Sidebar = ({ activeModule, onNavigate }: SidebarProps) => {
 			id: "feeds" as ModuleType,
 			label: "Threat Feeds",
 			icon: Building2,
+		},
+		{
+			id: "workspace" as ModuleType,
+			label: "Security Workspace",
+			icon: Layers,
 		},
 	];
 

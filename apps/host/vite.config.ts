@@ -32,6 +32,12 @@ export default defineConfig({
 					name: "mfeVulnerabilityTracker",
 					entry: `${process.env.VITE_MFE_VULNERABILITY_URL ?? "http://localhost:3300"}/remoteEntry.js`,
 				},
+
+				mfeSecurityWorkspace: {
+					type: "module",
+					name: "mfeSecurityWorkspace",
+					entry: `${process.env.VITE_MFE_WORKSPACE_URL ?? "http://localhost:3400"}/remoteEntry.js`,
+				},
 			},
 
 			shared: {
@@ -40,6 +46,10 @@ export default defineConfig({
 				},
 				"react-dom": {
 					singleton: true,
+				},
+				"@cybsec/shared-profile": {
+					singleton: true,
+					requiredVersion: "1.0.0",
 				},
 			},
 		}),

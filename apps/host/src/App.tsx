@@ -11,6 +11,7 @@ const DashboardApp = lazy(() => import("mfeDashboard/DashboardApp"));
 const CatalogApp = lazy(() => import("mfeThreatCatalog/Catalog"));
 const TrackerApp = lazy(() => import("mfeVulnerabilityTracker/Tracker"));
 const FeedsApp = lazy(() => import("mfeThreatFeeds/Feeds"));
+const SecurityWorkspace = lazy(() => import("mfeSecurityWorkspace/Workspace"));
 
 const App = () => {
 	const [activeModule, setActiveModule] = useState<ModuleType>("dashboard");
@@ -30,6 +31,9 @@ const App = () => {
 
 			case "feeds":
 				return <FeedsApp />;
+
+			case "workspace":
+				return <SecurityWorkspace />;
 
 			default:
 				return null;

@@ -7,7 +7,9 @@
 		"apps/threat-feeds",
 		"apps/threat-catalog",
 		"apps/vulnerability-tracker",
-		"packages/shared/profile"
+		"apps/security-workspace",
+		"packages/shared/profile",
+		"packages/shared/contextual-intelligence"
 	],
 	"scripts": {
 		"dev:host": "npm run dev --prefix apps/host",
@@ -15,15 +17,20 @@
 		"dev:catalog": "npm run dev --prefix apps/threat-catalog",
 		"dev:tracker": "npm run dev --prefix apps/vulnerability-tracker",
 		"dev:feeds": "npm run dev --prefix apps/threat-feeds",
-		"start:all": "concurrently \"npm run dev:dashboard\" \"npm run dev:catalog\" \"npm run dev:tracker\" \"npm run dev:feeds\" \"npm run dev:host\"",
+		"dev:workspace": "npm run dev --prefix apps/security-workspace",
+		"start:all": "concurrently \"npm run dev:dashboard\" \"npm run dev:catalog\" \"npm run dev:tracker\" \"npm run dev:feeds\" \"npm run dev:host\" \"npm run dev:workspace\"",
 		"build:host": "npm run build --prefix apps/host",
 		"build:mfe1": "npm run build --prefix apps/dashboard",
 		"build:mfe2": "npm run build --prefix apps/threat-feeds",
 		"build:mfe3": "npm run build --prefix apps/threat-catalog",
 		"build:mfe4": "npm run build --prefix apps/vulnerability-tracker",
-		"build:all": "npm run build:mfe1 && npm run build:mfe2 && npm run build:mfe3 && npm run build:mfe4 && npm run build:host"
+		"build:mfe5": "npm run build --prefix apps/security-workspace",
+		"build:all": "npm run build:mfe1 && npm run build:mfe2 && npm run build:mfe3 && npm run build:mfe4 && npm run build:host && npm run build:mfe5",
+		"test": "vitest run",
+		"test:watch": "vitest"
 	},
 	"devDependencies": {
-		"concurrently": "^9.0.0"
+		"concurrently": "^9.0.0",
+		"vitest": "^4.1.12"
 	}
 }

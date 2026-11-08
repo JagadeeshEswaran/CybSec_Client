@@ -27,3 +27,10 @@ declare module "mfeThreatFeeds/Feeds" {
 	const Feeds: ComponentType;
 	export default Feeds;
 }
+
+declare module "mfeSecurityWorkspace/Workspace" {
+	import type { ComponentType } from "react";
+
+	const Workspace: ComponentType;
+	export default Workspace;
+}

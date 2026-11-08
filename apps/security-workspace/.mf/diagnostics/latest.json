@@ -1,0 +1,10 @@
+{
+  "latestErrorEvent": {
+    "code": "TYPE-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"C:\\\\nvm4w\\\\nodejs\\\\node.exe \\\"C:\\\\\\\\Jagadeesh's\\\\\\\\003_My_Apps\\\\\\\\APP_CybSec_View\\\\\\\\CybSec_Client\\\\\\\\node_modules\\\\\\\\typescript\\\\\\\\bin\\\\\\\\tsc\\\" --project \\\"C:\\\\\\\\Jagadeesh's\\\\\\\\003_My_Apps\\\\\\\\APP_CybSec_View\\\\\\\\CybSec_Client\\\\\\\\apps\\\\\\\\security-workspace\\\\\\\\node_modules\\\\\\\\.federation\\\\\\\\tsconfig.e8a0670a991c84372eff8606a985047a.json\\\"\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "args": {
+      "cmd": "C:\\nvm4w\\nodejs\\node.exe \"C:\\\\Jagadeesh's\\\\003_My_Apps\\\\APP_CybSec_View\\\\CybSec_Client\\\\node_modules\\\\typescript\\\\bin\\\\tsc\" --project \"C:\\\\Jagadeesh's\\\\003_My_Apps\\\\APP_CybSec_View\\\\CybSec_Client\\\\apps\\\\security-workspace\\\\node_modules\\\\.federation\\\\tsconfig.e8a0670a991c84372eff8606a985047a.json\""
+    },
+    "timestamp": 1794123576035
+  }
+}

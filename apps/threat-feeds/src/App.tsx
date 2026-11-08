@@ -8,7 +8,6 @@ import {
 	PauseCircle,
 	Search,
 	Filter,
-	ChevronDown,
 	ArrowUpDown,
 	Eye,
 	X,
